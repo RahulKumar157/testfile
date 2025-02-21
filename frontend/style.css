@@ -1,0 +1,141 @@
+/* style.css */
+/* Drag & drop area styling */
+.stFileUploader {
+    border: 2px dashed #4a90e2; /* Blue accent from Atlantis */
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 1rem 0;
+    background-color: #2d2d44; /* Dark background */
+    transition: background-color 0.3s;
+    color: #ffffff; /* White text for contrast */
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%); /* Moves label above the uploader */
+    color: #4a90e2 !important; /* Blue accent for labels */
+    font-weight: bold !important;
+    padding: 5px 10px; /* Adds spacing around the label */
+}
+
+.stFileUploader:hover {
+    background-color: #3d3d5a; /* Slightly lighter dark on hover */
+}
+
+.stFileUploader label {
+    color: #4a90e2 !important; /* Blue accent for labels */
+    font-weight: bold !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%); /* Moves label above the uploader */
+    color: #4a90e2 !important; /* Blue accent for labels */
+    font-weight: bold !important;
+    padding: 5px 10px; /* Adds spacing around the label */
+}
+
+/* Preview container styling */
+.preview-container {
+    border: 1px solid #4a90e2; /* Blue accent border */
+    border-radius: 8px;
+    padding: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+    background-color: #32343a; /* Dark background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: #ffffff; /* White text for contrast */
+}
+
+/* Scrollbar styling */
+.preview-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.preview-container::-webkit-scrollbar-track {
+    background: #e4df40; /* Dark background for track */
+}
+
+.preview-container::-webkit-scrollbar-thumb {
+    background: #4a90e2; /* Blue thumb for Atlantis style */
+    border-radius: 4px;
+}
+
+.preview-container::-webkit-scrollbar-thumb:hover {
+    background: #639bff; /* Lighter blue on hover */
+}
+
+/* Dataframe styling */
+.stDataFrame {
+    width: 100%;
+    background-color: #2d2d44; /* Dark background for tables */
+    color: #ffffff; /* White text for contrast */
+}
+
+.stDataFrame th, .stDataFrame td {
+    background-color: #2d2d44 !important; /* Ensure dark background */
+    color: #ffffff !important; /* White text */
+}
+
+.stDataFrame tr:hover {
+    background-color: #3d3d5a !important; /* Darker hover for rows */
+}
+
+/* General Streamlit styling adjustments */
+body {
+    background-color: #56a8e3; /* Dark background for the entire page */
+    color: #ffffff; /* White text by default */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #4a90e2; /* Blue accents for headers */
+}
+
+/* Sidebar and button styling (general, can be refined for navigation) */
+.stSidebar {
+    background-color: #1e1e2f; /* Default sidebar background */
+    color: #ffffff; /* Default sidebar text color */
+}
+.stButton>button {
+    background-color: #2d2d44; /* Default button background */
+    color: #ffffff; /* Default button text color */
+    border: 1px solid #4a90e2; /* Blue accent border for buttons */
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    transition: background-color 0.3s;
+
+}
+.stButton>button:hover {
+    background-color: #3d3d5a; /* Darker background on hover for buttons */
+    color: #ffffff;
+}
+/* Specific styling for sidebar title ("Smart File Preview") */
+.stSidebar h1 {
+    color: #4a90e2; /* Blue accent for sidebar title */
+    font-family: 'Roboto Slab', serif; /* Match the title font */
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-bottom: 1rem;
+}
+/* Specific styling for sidebar navigation buttons (e.g., Home, Features, Upload, etc.) */
+.stSidebar .stButton>button {
+    background-color: #2d2d44; /* Consistent dark background */
+    color: #ffffff; /* White text */
+    border: 1px solid #4a90e2; /* Blue accent border */
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem 0;
+    width: 100%; /* Ensure buttons span the sidebar width */
+    text-align: left; /* Align text to the left for consistency */
+}
+.stSidebar .stButton>button:hover {
+    background-color: #3d3d5a; /* Darker on hover */
+    color: #ffffff;
+}
+.stMarkdown {
+    color: #ffffff; /* Ensure markdown text is white */
+}
+
+
+.stWarning, .stError {
+    background-color: #4a2d44; /* Dark warning/error background */
+    color: #ffffff; /* White text for warnings/errors */
+}
