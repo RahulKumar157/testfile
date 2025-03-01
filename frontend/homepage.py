@@ -2,11 +2,13 @@ import streamlit as st
 
 import pandas as pd
 import base64
+# import style.css is not needed, the CSS file will be loaded using the local_css function
 from pathlib import Path
 
 # Custom CSS for styling
 def local_css(style):
-    with open(style) as f:
+    css_path = Path(__file__).parent / "style.css"
+    with open(css_path) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
         
 
