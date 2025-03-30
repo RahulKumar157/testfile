@@ -44,7 +44,7 @@ if st.session_state.selected_page == "Upload":
     # Create drag-and-drop area
     uploaded_file = st.file_uploader(
         label=" ",
-        type=["csv", "xls", "xlsx", "html", "py", "txt"],
+        type=["csv",  "txt"],
         accept_multiple_files=False,
         key="file_uploader"
     )
