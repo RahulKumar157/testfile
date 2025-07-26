@@ -1,9 +1,19 @@
 import streamlit as st
-
+from sqlalchemy import create_engine
 import pandas as pd
 import base64
 # import style.css is not needed, the CSS file will be loaded using the local_css function
 from pathlib import Path
+
+# Database connection
+DB_USER = "postgres"
+DB_PASSWORD = "admin"
+DB_HOST = "localhost"
+DB_PORT = "5432"
+DB_NAME = "file_uploads"
+# Create connection string
+engine = create_engine(f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}")
+
 
 # Custom CSS for styling
 def local_css(style):
